@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/common/normalize.css" />
+  <link rel="stylesheet" href="../css/common/reset.css" />
+  <link rel="stylesheet" href="../css/diamond.css" />
+  <title>采矿家--宝石</title>
+</head>
+<body :class="{'overflow': filterTableShow}">
+  <div class="container">
+    <!-- header -->
+    <header class="header">
+      <div class="icon-menu" v-show="!showMenu" @click="openMenu()">
+        <img src="../images/icon_menu.png" alt="">
+      </div>
+      <div class="icon-close" v-show="showMenu" @click="closeMenu()">
+          <img src="../images/icon_close.png" alt="">
+        </div>
+      <div class="icon-logo">
+        <img src="../images/logo.jpg" alt="">
+      </div>
+      <div class="icon-user">
+        <a href="login.html"><img src="../images/icon_user.png" alt=""></a>
+      </div>
+    </header>
+    <!-- 菜单分类 -->
+    <div class="menu" v-show="showMenu">
+      <ul>
+        <li><a href="index.html">首页</a></li>
+        <li class="active"><a href="diamond.html">宝石</a></li>
+        <li><a href="service.html">定制服务</a></li>
+        <li><a href="purchasing.html">全球猎宝</a></li>
+        <li><a href="journal.html">采矿家日记</a></li>
+      </ul>
+    </div>
+
+    <!-- 帅选条件 -->
+    <div class="fiter-list">
+      <div>筛选条件：红宝石+1-2克</div>
+      <div class="filter-btn" @click="openFilterTable()">筛选</div>
+    </div>
+
+    <!-- 宝石列表 -->
+    <div class="diamont-list">
+      <ul>
+        <li>
+          <div><img src="../images/diamond.jpg" alt="宝石"></div>
+          <div>1.15克拉天然莫桑比克鸽血红红宝石</div>
+          <div><p></p><span>￥21500</span><p></p></div>
+        </li>
+        <li>
+          <div><img src="../images/diamond.jpg" alt="宝石"></div>
+          <div>1.15克拉天然莫桑比克鸽血红红宝石</div>
+          <div><p></p><span>￥21500</span><p></p></div>
+        </li>
+        <li>
+          <div><img src="../images/diamond.jpg" alt="宝石"></div>
+          <div>1.15克拉天然莫桑比克鸽血红红宝石</div>
+          <div><p></p><span>￥21500</span><p></p></div>
+        </li>
+        <li>
+          <div><img src="../images/diamond.jpg" alt="宝石"></div>
+          <div>1.15克拉天然莫桑比克鸽血红红宝石</div>
+          <div><p></p><span>￥21500</span><p></p></div>
+        </li>
+        <li>
+          <div><img src="../images/diamond.jpg" alt="宝石"></div>
+          <div>1.15克拉天然莫桑比克鸽血红红宝石</div>
+          <div><p></p><span>￥21500</span><p></p></div>
+        </li>
+        <li>
+          <div><img src="../images/diamond.jpg" alt="宝石"></div>
+          <div>1.15克拉天然莫桑比克鸽血红红宝石</div>
+          <div><p></p><span>￥21500</span><p></p></div>
+        </li>
+      </ul>
+    </div>
+   
+  </div>
+  <!-- 筛选列表 -->
+  <div class="filter-table" v-show="filterTableShow">
+    <header class="filter-header">
+      <div class="icon-close" @click="closeFilterTable()">
+          <img src="../images/icon_close.png" alt="">
+        </div>
+      <div class="icon-logo">
+        <img src="../images/logo.jpg" alt="">
+      </div>
+      <div class="icon-user" style="display:none;">
+        <img src="../images/icon_user.png" alt="">
+      </div>
+    </header>
+    <div class="filter-con-list">
+      <div class="filter-subject">
+        <h2 class="filter-title">价格</h2>
+        <div class="filter-item">
+          <span>成品</span>
+          <span>裸石</span>
+          <span>裸石</span>
+          <span>裸石</span>
+        </div>
+      </div>
+      <div class="filter-subject">
+        <h2 class="filter-title">分类</h2>
+        <div class="filter-item">
+          <span>成品</span>
+          <span>裸石</span>
+        </div>
+      </div>
+      <div class="filter-subject">
+        <h2 class="filter-title">重量</h2>
+        <div class="filter-item">
+          <span class="active">1克以下</span>
+          <span>1-2克</span>
+          <span>2-3克</span>
+          <span>3-5克</span>
+          <span>5克以上</span>
+        </div>
+      </div>
+      <div class="filter-subject">
+        <h2 class="filter-title">证书</h2>
+        <div class="filter-item">
+          <span>GIC</span>
+          <span>BGL</span>
+          <span>EGL</span>
+          <span>RGS</span>
+        </div>
+      </div>
+    </div>
+    <footer class="filter-footer">
+      <div class="btn-reset" @click="resetFilterData()">重置</div>
+      <div class="btn-submit" @click="confirmFilterData()">确定</div>
+    </footer>
+  </div>
+</body>
+<script src="../libs/rem.js"></script>
+<script src="../libs/vue.1.0.8.js"></script>
+<script src="../js/diamond.js"></script>
+</html>

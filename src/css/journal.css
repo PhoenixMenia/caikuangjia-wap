@@ -1,0 +1,186 @@
+
+  body{
+    background-color: #d2d2d2;
+  }
+  .container{
+    padding-top: .76rem;
+  }
+  .header{
+    width: 100%;
+    height: .76rem;
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    z-index: 10;
+  }
+  .header>div{
+    height: 100%;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+  }
+  .header>div.icon-menu{
+    width: .59rem;
+  }
+  .header>div.icon-menu img{
+    width: .3rem;
+    height: auto;
+  }
+  .header>div.icon-close{
+    width: .59rem;
+  }
+  .header>div.icon-close img{
+    width: .25rem;
+    height: auto;
+  }
+  .header>div.icon-logo{
+    -webkit-box-flex: 1;
+  }
+  .header>div.icon-logo img{
+    width: 1.31rem;
+    height: auto;
+  }
+  .header>div.icon-user{
+    width: .64rem;
+  }
+  .header>div.icon-user img{
+    width: .2rem;
+    height: auto;
+  }
+  
+  .menu{
+    position: fixed;
+    top: .76rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffffff;
+    z-index: 10;
+    text-align: center;
+    padding-top: .32rem;
+    font-size: .18rem;
+  }
+  .menu ul li{
+    width: 100%;
+    height: .67rem;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    color: #000000;
+  }
+  .menu ul li.active a{
+    color: #bf9477;
+  }
+  .menu ul li a{
+    color: #000000;
+  }
+  
+  
+  .banner {
+    width: 100%;
+    height:1.98rem;
+  }
+  .banner img{
+    width: 100%;
+    height: auto;
+  }
+
+  .category-list{
+    height: .83rem;
+    background: #ffffff;
+    padding-top: .26rem;
+    padding-left: .11rem;
+    padding-right: .11rem;
+    
+  }
+  .category-list ul{
+    display: -webkit-box;
+    -webkit-box-pack: justify;
+  }
+  .category-list ul li{
+    width: .69rem;
+    height: .25rem;
+    border: 1px solid #000000;
+    color: #000000;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    font-size: .12rem;
+    font-weight: bold
+  }
+  .category-list ul li.all{
+    width: .44rem;
+  }
+  .category-list ul li.active{
+    color: #ffffff;
+    background: #000000;
+  }
+
+  .journal-list{
+    width: 100%;
+    padding: .13rem;
+  }
+  .journal-list ul{}
+  .journal-list ul li{
+    background: #ffffff;
+    height: 1.62rem;
+    padding: .05rem .12rem 0;
+    margin-bottom: .13rem;
+  }
+  .journal-list ul li .title{
+    height: .26rem;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    font-size: .12rem;
+  }
+  .journal-list ul li .title p{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .journal-list ul li .content{
+    display: -webkit-box;
+    width: 100%;
+    height: 1.15rem;
+  }
+  .journal-list ul li .left{
+    width: 1.95rem;
+    height: 1.15rem;
+    overflow: hidden;
+  }
+  .journal-list ul li .left img{
+    width: 100%;
+    height: auto;
+  }
+  .journal-list ul li .right{
+    -webkit-box-flex: 1;
+    height: 100%;
+    padding-left: .49rem;
+    padding-top: .23rem;
+  }
+  .journal-list ul li .right p{
+    color: #a1a1a1;
+    font-size: .17rem;
+  }
+  .journal-list ul li .right div{
+    margin-top: .05rem;
+    width: .5rem;
+    height: .17rem;
+    background: url('../images/icon_arrow.png') no-repeat left center;
+    background-size: .22rem auto;
+  }
+  .journal-list ul li .right span{
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    width: .72rem;
+    height: .22rem;
+    margin-top: .24rem;
+    margin-left: .08rem;
+    color: #ffffff;
+    background: #444655;
+    font-size: .12rem;
+  }

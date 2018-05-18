@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/common/normalize.css" />
+  <link rel="stylesheet" href="../css/common/reset.css" />
+  <link rel="stylesheet" href="../css/index.css" />
+  <link rel="stylesheet" href="../libs/swiper/swiper-4.2.2.min.css">
+  <!-- 自定义swiper分页器样式 -->
+  <style>
+    .my-bullet{
+      width: 8px;
+      height: 8px;
+      display: inline-block;
+      border: 1px solid #000000;
+      background: transparent;
+      border-radius: 100%;
+      margin: 0 4px;
+    }
+    .swiper-pagination-bullet-active{
+      background: #000000;
+      border: 0;
+    }
+  </style>
+  <title>采矿家--首页</title>
+</head>
+<body>
+  <div class="container">
+    <!-- header -->
+    <header class="header">
+      <div class="icon-menu" v-show="!showMenu" @click="openMenu()">
+        <img src="../images/icon_menu.png" alt="">
+      </div>
+      <div class="icon-close" v-show="showMenu" @click="closeMenu()">
+          <img src="../images/icon_close.png" alt="">
+        </div>
+      <div class="icon-logo">
+        <img src="../images/logo.jpg" alt="">
+      </div>
+      <div class="icon-user">
+        <a href="login.html"><img src="../images/icon_user.png" alt=""></a>
+      </div>
+    </header>
+    <!-- 菜单分类 -->
+    <div class="menu" v-show="showMenu">
+      <ul>
+        <li class="active"><a href="index.html">首页</a></li>
+        <li><a href="diamond.html">宝石</a></li>
+        <li><a href="service.html">定制服务</a></li>
+        <li><a href="purchasing.html">全球猎宝</a></li>
+        <li><a href="journal.html">采矿家日记</a></li>
+      </ul>
+    </div>
+
+    <!-- banner -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img style="width: 100%;height:auto" src="../images/home_banner.jpg" alt=""></div>
+        <div class="swiper-slide"><img style="width: 100%;height:auto" src="../images/home_banner.jpg" alt=""></div>
+        <div class="swiper-slide"><img style="width: 100%;height:auto" src="../images/home_banner.jpg" alt=""></div>
+      </div>
+      <!-- 如果需要分页器 -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- 文字 -->
+    <div class="content">
+      <p>红之热情，蓝之纯净，绿之安详，橙之愉悦<br/>色彩缤纷的魅力让我们都能寻找到属于自己的幸福感</p>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="top">
+        <p>“上帝存在于细节中”</p>
+        <p>by 密斯·凡德罗</p>
+      </div>
+      <div class="bottom">
+        <p>Copyright © 2016.pngems.com</p>
+        <p>All Rights Reserverd.  caikuangzhe@sina.com</p>
+        <p>版权所有@2018 彩矿家  蜀ICP备16005978号-1</p>
+      </div>
+    </footer>
+  </div>
+</body>
+<script src="../libs/rem.js"></script>
+<script src="../libs/swiper/swiper-4.2.2.min.js"></script>
+<script>        
+  var mySwiper = new Swiper ('.swiper-container', {
+    autoplay: true,
+    loop: true,
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+      bulletClass : 'my-bullet',
+      clickable :true
+    }
+  })        
+</script>
+<script src="../libs/vue.1.0.8.js"></script>
+<script src="../js/index.js"></script>
+</html>
