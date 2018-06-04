@@ -1,0 +1,125 @@
+
+  body{
+    background-color: #e7e7e7;
+  }
+  .container{
+    padding-top: .76rem;
+  }
+  .header{
+    width: 100%;
+    height: .76rem;
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    z-index: 10;
+  }
+  .header>div{
+    height: 100%;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+  }
+  .header>div.icon-menu{
+    width: .59rem;
+  }
+  .header>div.icon-menu img{
+    width: .3rem;
+    height: auto;
+  }
+  .header>div.icon-close{
+    width: .59rem;
+  }
+  .header>div.icon-close img{
+    width: .25rem;
+    height: auto;
+  }
+  .header>div.icon-logo{
+    -webkit-box-flex: 1;
+  }
+  .header>div.icon-logo img{
+    width: 1.31rem;
+    height: auto;
+  }
+  .header>div.icon-user{
+    width: .64rem;
+  }
+  .header>div.icon-user img{
+    width: .2rem;
+    height: auto;
+  }
+  
+  .menu{
+    position: fixed;
+    top: .76rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffffff;
+    z-index: 10;
+    text-align: center;
+    padding-top: .32rem;
+    font-size: .18rem;
+  }
+  .menu ul li{
+    width: 100%;
+    height: .67rem;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    color: #000000;
+  }
+  .menu ul li.active a{
+    color: #bf9477;
+  }
+  .menu ul li a{
+    color: #000000;
+  }
+
+
+  .user-center-wrap{
+    padding-left: .25rem;
+    padding-right: .25rem;
+    padding-bottom: .5rem;
+  }
+  .user-center-wrap>h1{
+    text-align: center;
+    line-height: 1;
+    padding-top: .58rem;
+    padding-bottom: .43rem;
+    font-size: .21rem;
+    color: #000000;
+  }
+  .user-center-wrap .user-item{
+    font-size: .12rem;
+    margin-bottom: .21rem;
+  }
+  .user-center-wrap .user-item .item-title{
+    height: .32rem;
+    color: #5e5e5e;
+    display: -webkit-box;
+    -webkit-box-align: center;
+  }
+  .user-center-wrap .user-item .item-content{
+    height: .37rem;
+    background: #ffffff;
+    color: #010101;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    padding-left: .14rem;
+  }
+  .user-center-wrap .user-item .item-content.icon{
+    background-image: url('../images/icon_grade.png');
+    background-repeat: no-repeat;
+    background-position: .15rem center;
+    background-size: .195rem;
+  }
+  .user-center-wrap .user-item .item-tips{
+    padding-left: .45rem;
+    padding-top: .1rem;
+    line-height: 2;
+    font-size: .1rem;
+    color: #5e5e5e;
+    text-align: justify;
+  }
